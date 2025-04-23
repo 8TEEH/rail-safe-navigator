@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { Bell } from "lucide-react";
 
 const Navigation = () => {
   return (
@@ -11,16 +12,19 @@ const Navigation = () => {
               Smart Railway Navigator
             </Link>
           </div>
-          <div className="hidden sm:flex sm:items-center">
+          <div className="hidden sm:flex sm:items-center sm:space-x-4">
             <Link to="/facilities" className="px-3 py-2 text-slate-600 hover:text-blue-600">
               Facilities
             </Link>
             <Link to="/chatbot" className="px-3 py-2 text-slate-600 hover:text-blue-600">
-              Chatbot
+              Health Assistant
             </Link>
             <Link to="/about" className="px-3 py-2 text-slate-600 hover:text-blue-600">
               About
             </Link>
+            <button className="p-2 text-slate-600 hover:text-blue-600 rounded-full hover:bg-gray-100">
+              <Bell className="h-5 w-5" />
+            </button>
           </div>
         </div>
       </div>
