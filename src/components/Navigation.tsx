@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Bell } from "lucide-react";
+import { Bell, Code2 } from "lucide-react";
 
 const Navigation = () => {
   return (
@@ -21,6 +21,9 @@ const Navigation = () => {
             </Link>
             <Link to="/about" className="px-3 py-2 text-slate-600 hover:text-blue-600">
               About
+            </Link>
+            <Link to="/code-preview" className="px-3 py-2 text-slate-600 hover:text-blue-600">
+              <Code2 className="h-5 w-5" />
             </Link>
             <button className="p-2 text-slate-600 hover:text-blue-600 rounded-full hover:bg-gray-100">
               <Bell className="h-5 w-5" />

@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Facilities from "./pages/Facilities";
 import Chatbot from "./pages/Chatbot";
 import About from "./pages/About";
+import CodePreview from "./pages/CodePreview";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/about" element={<About />} />
+          <Route path="/code-preview" element={<CodePreview />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
