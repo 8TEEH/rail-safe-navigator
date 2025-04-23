@@ -1,5 +1,5 @@
 
-import { Ticket, Restroom, Platform, FoodCourt } from "lucide-react";
+import { Ticket, Bath, TrainFront, Utensils } from "lucide-react";
 import FacilityCard from "../components/FacilityCard";
 
 const Facilities = () => {
@@ -10,17 +10,17 @@ const Facilities = () => {
       description: "Quick and easy ticket booking services",
     },
     {
-      icon: Restroom,
+      icon: Bath,
       title: "Restrooms",
       description: "Clean and well-maintained facilities",
     },
     {
-      icon: Platform,
+      icon: TrainFront,
       title: "Platforms",
       description: "Easy access to all train platforms",
     },
     {
-      icon: FoodCourt,
+      icon: Utensils,
       title: "Food Court",
       description: "Various food and beverage options",
     },
