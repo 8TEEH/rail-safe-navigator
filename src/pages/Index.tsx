@@ -1,10 +1,10 @@
-
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Search, Calendar, MapPin, Info } from "lucide-react";
+import VoiceSearch from "../components/VoiceSearch";
 
 const Index = () => {
   return (
@@ -46,9 +46,12 @@ const Index = () => {
                       />
                     </div>
                   </div>
-                  <Button className="w-full mt-4 bg-blue-600 hover:bg-blue-700">
-                    <Search className="mr-2 h-4 w-4" /> Search Trains
-                  </Button>
+                  <div className="flex items-center justify-between mt-4">
+                    <VoiceSearch />
+                    <Button className="bg-blue-600 hover:bg-blue-700">
+                      <Search className="mr-2 h-4 w-4" /> Search Trains
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </div>
